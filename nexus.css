@@ -1,0 +1,193 @@
+h2, h2 a:link, h2 a:visited, .content_header, .articleHead {
+    font-size: 20px;
+    line-height: 25px;    
+    padding-bottom: 5px;
+}
+
+h2{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+
+a {
+	color:#008000;
+}
+a:hover {color:#AAA;}
+
+/* ----[ CONTAINER DIVS ]----*/	
+
+/* ----[ WRAPPER DIVS ]----*/
+#container_spacer1 .wrapper960 {
+	height:5px;
+}
+#container_spacer2 .wrapper960 {
+	height:5px;
+}
+
+
+/* ----[ HEADER ]----*/
+#header_items {
+}
+/* Logo */
+.logo_container {
+	width:960px; 
+	top:0px; 
+	left:0px; 
+}
+.logo_container, h1.logo, h1.logo a {
+	height:129px;
+}
+h1.logo-text a {
+	letter-spacing:-3px; 
+	top:60px; 
+	left:15px; 
+	font-size:55px !important; 
+	font-weight:normal; 
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	text-align:left; 
+}
+p.site-slogan {
+	font-size:11px; 
+	letter-spacing:2px; 
+	top:81px; 
+	left:15px; 
+	text-align:center; 
+}
+
+/* Search */
+#search {
+	top:7px;
+	left:780px;
+}
+#search .inputbox {
+	color:#000000;
+	font:14px Arial,Helvetica,sans-serif;
+	background-color:#ffffff;
+	border-radius:5px;
+}
+/* Laguages */
+#language {
+	background-color:#CCCCCC;
+	top:80px;
+	left:805px;
+}
+
+/* ----[ MENUS ]----*/
+/* Topmenu */
+#topmenu {
+	background-color:#bbb;
+	color:#FFFFFF;
+	width:950px;
+	top:0px;
+	left:0px;
+}
+#topmenu ul li{
+    padding:5px 0;
+}
+#topmenu ul li a {
+	padding: 0px 10px;
+}
+
+#topmenu ul li a {
+	border-right:1px solid #d2d2d2;
+}
+#topmenu ul li:last-child a {
+	border:none;
+}
+
+/* Hornav - Parent Styling */ 
+
+#hornav ul ul a {line-height:20px; padding: 1px 10px;}
+
+/* Hornav - Child Styling */
+#hornav li li a, #hornav li li.active a, #hornav li li.visited a {color:#555555 !important;}
+
+/* Hornav - Child Block Styling */
+#hornav li li, #hornav li li li {padding: 2px 0px 4px !important;}
+#hornav li li:last-child, #hornav li li li:last-child {background:none !important;}
+
+/* Hornav - Dropdown Block Styling */
+#hornav ul li ul {
+	background-color: #eeeeee;
+	-moz-border-radius:0px 0px 5px 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	-webkit-border-bottom-right-radius: 5px; 
+	border-radius:0px 0px 5px 5px;  
+}
+
+/* Hornav - Sub-Child Block Styling */
+#hornav li ul li ul {
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	border-radius:5px; padding:5px;
+}
+
+/* Hornav - Hover/Highlight Styling */
+#hornav li li a:hover {color:#999999;}
+
+/* sub menu links on hover or focus */
+#subMenusContainer a:hover, #subMenusContainer a:focus, #subMenusContainer a.subMenuParentBtnFocused {color:#fff}
+
+/* Parent Sub Menu Links ---[javascript users only]*/
+.subMenuParentBtn { background: url(../images/arrow_right.png) right center no-repeat !important;  }
+
+/* Parent Sub Menu Links on hover or focus ---[javascript users only]*/
+.subMenuParentBtnFocused{background: url(../images/arrow_right_over.png) right center no-repeat;  }
+
+/* Parent Main Menu Links ---[javascript users only]*/
+#hornav .mainMenuParentBtn{/*background: url(../images/arrow_down.png) right 57% no-repeat; padding-right:18px;*/}
+
+/* Parent Main Menu Links on hover or focus ---[javascript users only]*/
+#hornav .mainMenuParentBtnFocused{/*background: url(../images/arrow_down_over.png) right 57% no-repeat; padding-right:18px;*/}
+
+/* ----[ OLs ULs, LIs, and DIVs ]----*/
+
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.smOW{display:none; position: absolute; overflow:hidden; padding:0 2px; margin:0 0 0 -2px;}
+
+/* All submenu OLs and ULs */
+#subMenusContainer{top:11px;}
+
+/* ----[ SLIDESHOW ]----*/
+#slideshow {}
+.box_skitter {width:960px !important; background: none repeat scroll 0 0 !important}
+
+/* ----[ BREADCRUMBS ]----*/
+/* Styling */	
+#breadcrumb .module{border:none;}
+#breadcrumb.block_holder{padding:0px;}
+div.breadcrumbs a.pathway{color:#ffffff !important;}
+
+
+/* ----[ DEFAULT MODULE STYLING ]----*/
+/* Footer Menu */
+#footermenu {
+}
+#footermenu ul li{
+	padding: 5px 0;
+}
+#footermenu ul li a {
+	color:#ddd;
+	border-right: 1px solid #D2D2D2;
+    padding: 0 10px;
+}
+#footermenu ul li a:hover {
+	color:#ffffff;
+}
+
+/* Read More */
+.readon, .readmore a {
+background: #c4c4c4;
+background-image: -moz-linear-gradient(center top , #eaeaea, #dcdcdc);
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#dcdcdc));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#dcdcdc');
+border-color:#ccc;
+-moz-border-radius:0px 0px 5px 5px; -webkit-radius: 5px; border-radius:5px;
+border-style:solid;
+border-width:1px;
+font-size:11px;
+font-weight:bold;
+color:#333;
+}

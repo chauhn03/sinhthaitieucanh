@@ -1,0 +1,239 @@
+/*style 1 - Light Style*/
+
+/*---------BODY----------*/
+body {color: #333; background:url(../images/bg-web.jpg) no-repeat fixed top center;}
+
+#container_header {
+	background-image: url("../images/header.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+	/*background-color:#643F00;*/
+}
+#container_main {
+	/*background: url("../images/bg_main.png") repeat-y scroll center top transparent;*/
+}
+#container_slideshow{
+}
+#container_top_modules{	}
+#container_bottom_modules{padding:4px 0;}
+#container_base {background:url(../images/bg_footer.jpg) repeat-x #176533;padding-top:10px;}	
+
+/*---------HEADER----------*/
+#search .inputbox {
+    background-color: #ffffff;
+    color: #000000;
+	border:1px solid #dedede;
+	box-shadow: 1px 1px 1px #c0c0c0 inset;
+}
+
+/*---------LOGO----------*/
+
+
+/*---------NAVIGATION----------*/
+
+#hornav ul a:hover, #hornav ul ul a:hover, #hornav ul li.active a {
+	color:#FF0;
+	/*background:url("../images/mainnav-active-bg.gif") no-repeat scroll center 0 transparent;*/
+}
+
+#hornav ul.menu > li {
+	background:url("../images/bg-s.png") no-repeat scroll 0 0 transparent;
+	padding:0 0 0 1px;
+}
+#hornav ul.menu > li:first-child {
+	background:none;
+}
+
+/*---------SOCIAL----------*/
+
+
+/*---------SHOWCASE----------*/
+#showcase #iview119 {
+	width:100% !important;
+}
+
+/*---------BREADCRUMB----------*/
+#container_breadcrumb {
+	background:url(../images/nenlon.jpg) no-repeat scroll center bottom #1D1C1A;			
+}	
+div.breadcrumbs a.pathway {
+    color: #008000 !important;
+	font-weight:bold;
+}
+div.breadcrumbs a.pathway:hover {
+	color:#555 !important
+}
+.breadcrumbs {
+	padding:5px 10px;	
+    border: 1px solid #ccc;
+}
+
+/*---------TOP MODULE----------*/
+#top_modules .module h3, #top_modules .module_menu h3 {
+        color: #ffffff;
+	font-weight:bold;
+}
+
+#top_modules .module ul a:hover, #top_modules .module_menu ul a:hover, #top_modules .module ul a:focus, #top_modules .module_menu ul a:focus {
+	color:#333333;	
+}	
+
+#top_modules .module ul a, #top_modules .module_menu ul a {
+	border-top:1px solid #FFFFFF;
+	padding:4px 15px;
+	margin:0px;
+}
+
+#top_modules .module ul li:last-child a, #top_modules .module_menu ul li:last-child a {
+	border-bottom:1px solid #FFFFFF;
+}
+
+#top_modules a:hover{color:#ffffff;}
+
+/*---------SLIDECOL BLOCK----------*/
+.sidecol_block .module, .sidecol_block .module_menu{    
+    background: url("../images/vahoa.png") no-repeat scroll center bottom transparent;    
+    padding-bottom: 30px;
+}
+
+.sidecol_block .module:last-child, .sidecol_block .module_menu:last-child {
+	margin-bottom:0;
+}
+
+.sidecol_block .module ul a:hover, .sidecol_block .module_menu ul a:hover, .sidecol_block .module ul a:focus, .sidecol_block .module_menu ul a:focus ,.sidecol_block .module_menu ul li.active > a{
+	color:#AAA;
+}
+
+.sidecol_block .module h3, .sidecol_block .module_menu h3 {
+    background:url("../images/icon_home.png") no-repeat scroll 0 center transparent;
+	font-family: tahoma;
+    font-size: 15px;
+    font-weight: bold;
+}
+.module_menu ul a {
+	background:url("../images/buttlets.png") no-repeat scroll 10px center transparent;
+}
+
+/*---------MAIN CONTENT----------*/
+
+/*---------CONTENT TOP----------*/
+.contenttop .module, .contenttop .module_menu{        
+    margin-bottom:13px;
+}
+
+.contenttop .module ul a:hover, .contenttop .module_menu ul a:hover, .contenttop .module ul a:focus, .contenttop .module_menu ul a:focus {
+
+}
+
+.contenttop .module h3, .contenttop .module_menu h3 {
+	background-color: #ffffff;
+}
+
+/*---------CONTENT BOTTOM----------*/
+.contentbottom .module, .contentbottom .module_menu{
+	margin-bottom:10px;
+    color: #1F1F1F;
+    padding: 4px;
+}
+
+.contentbottom .module_padding {
+    height: 100%;
+    padding: 0px 0px 10px 0;
+}
+
+.contentbottom .module ul a:hover, .contentbottom .module_menu ul a:hover, .contentbottom .module ul a:focus, .contentbottom .module_menu ul a:focus {
+	background:#ffffff;
+}
+
+.contentbottom .module h3, .contentbottom .module_menu h3 {
+	background: url("../images/icon_home.png") no-repeat scroll 0 center transparent;
+	padding: 4px 4px 4px 40px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+/*---------BOTTOM MODULE----------*/
+#bottom_modules .module h3, #bottom_modules .module_menu h3 {
+    background: url("../images/icon_home.png") no-repeat scroll 0 center rgba(0, 0, 0, 0);
+    font-family: tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 4px 4px 44px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+#bottom_modules .bottom-1:first-child  .module_header {
+	background:url("../images/g1.png") no-repeat scroll right 20px transparent;
+}
+#bottom_modules .bottom-1:first-child {
+	margin-right:50px;
+	width:54% !important;
+}
+#bottom_modules .bottom-1:first-child + div {
+	width:40% !important;
+}
+#bottom_modules .bottom-1:first-child + div  .module_header {
+	background:url("../images/g2.png") no-repeat scroll right 20px transparent;
+}
+
+/*---------BASE----------*/
+#base .module h3, #base .module_menu h3 {
+    color: #ffffff;
+	font-weight:bold;
+	background-image:url(../images/overlay-light.png);
+	background-repeat:repeat;
+	padding:8px;
+	border-radius:4px;
+}
+
+#base .module ul a:hover, #base .module_menu ul a:hover, #base .module ul a:focus, #base .module_menu ul a:focus {
+	color:#333333;
+	background-color: #ffffff;
+}
+
+#base a:hover{color:#ffffff;}
+
+#base .module ul a, #base .module_menu ul a {
+	padding:4px 15px;
+	margin:0px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #FFFFFF;
+}
+
+#base .module ul li:last-child a, #base .module_menu ul li:last-child a {
+	border-bottom:1px dotted #FFFFFF;
+}
+
+/*---------FOOTER----------*/
+#footermenu ul li a {
+	color:#fff;
+	border-right: 1px solid #D2D2D2;
+    padding: 0 10px;
+	font-weight:bold;
+}
+#footermenu ul li a:hover {
+	color:#333333;
+}
+
+/*---------COPYRIGHT----------*/
+#copyright {
+    color:#ffffff;
+}
+
+#copyright a {
+    color:#ffffff;
+}
+
+#bottom_modules{
+background-color: white;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+}
+#main{
+background-color:white;
+}
+
+
+
