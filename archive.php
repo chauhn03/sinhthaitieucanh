@@ -4,10 +4,8 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package xuongrongkieng
+ * @package sinhthaitieucanh
  */
-if(true)
-    return;
 
 get_header(); ?>
 

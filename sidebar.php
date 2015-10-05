@@ -4,10 +4,8 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package xuongrongkieng
+ * @package sinhthaitieucanh
  */
-if(true)
-    return;
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;

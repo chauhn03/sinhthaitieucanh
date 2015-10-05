@@ -1,13 +1,13 @@
 <?php
 /**
- * xuongrongkieng functions and definitions.
+ * sinhthaitieucanh functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package xuongrongkieng
+ * @package sinhthaitieucanh
  */
 
-if ( ! function_exists( 'xuongrongkieng_setup' ) ) :
+if ( ! function_exists( 'sinhthaitieucanh_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'xuongrongkieng_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function xuongrongkieng_setup() {
+function sinhthaitieucanh_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on xuongrongkieng, use a find and replace
-	 * to change 'xuongrongkieng' to the name of your theme in all the template files.
+	 * If you're building a theme based on sinhthaitieucanh, use a find and replace
+	 * to change 'sinhthaitieucanh' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'xuongrongkieng', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'sinhthaitieucanh', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -44,8 +44,8 @@ function xuongrongkieng_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'xuongrongkieng' ),
-                'category' => esc_html__( 'Category Menu', 'xuongrongkieng' )
+                'top' => esc_html__( 'Top Menu', 'sinhthaitieucanh' ),      
+		'primary' => esc_html__( 'Primary Menu', 'sinhthaitieucanh' ),
 	) );
 
 	/*
@@ -73,13 +73,13 @@ function xuongrongkieng_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'xuongrongkieng_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'sinhthaitieucanh_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
-endif; // xuongrongkieng_setup
-add_action( 'after_setup_theme', 'xuongrongkieng_setup' );
+endif; // sinhthaitieucanh_setup
+add_action( 'after_setup_theme', 'sinhthaitieucanh_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -88,19 +88,19 @@ add_action( 'after_setup_theme', 'xuongrongkieng_setup' );
  *
  * @global int $content_width
  */
-function xuongrongkieng_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'xuongrongkieng_content_width', 640 );
+function sinhthaitieucanh_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'sinhthaitieucanh_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'xuongrongkieng_content_width', 0 );
+add_action( 'after_setup_theme', 'sinhthaitieucanh_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function xuongrongkieng_widgets_init() {
+function sinhthaitieucanh_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'xuongrongkieng' ),
+		'name'          => esc_html__( 'Sidebar', 'sinhthaitieucanh' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -109,45 +109,23 @@ function xuongrongkieng_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'xuongrongkieng_widgets_init' );
+add_action( 'widgets_init', 'sinhthaitieucanh_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function xuongrongkieng_scripts() {
-	wp_enqueue_style( 'xuongrongkieng-style', get_stylesheet_uri() );               
-        
-        wp_enqueue_style( 'xuongrongkieng-menu-style', get_template_directory_uri() . '/style/menu.css' );    
-        
-        wp_enqueue_style( 'xuongrongkieng-them-style', get_template_directory_uri() . '/style/theme-style.css' );    
-//        wp_enqueue_style( 'xuongrongkieng-inline-style', get_template_directory_uri() . '/style/inline.css' );    
-//    
-//        wp_enqueue_style( 'xuongrongkieng-copy-style', get_template_directory_uri() . '/style/style0.css' );
-//        
-//        wp_enqueue_style( 'xuongrongkieng-btcontentslider-style', get_template_directory_uri() . '/style/btcontentslider.css' );
-//        
-//        wp_enqueue_style( 'xuongrongkieng-iview-style', get_template_directory_uri() . '/style/iview.css' );
-//        
-//        wp_enqueue_style( 'xuongrongkieng-nexus-style', get_template_directory_uri() . '/style/nexus.css' );                
-//        
-//        wp_enqueue_style( 'xuongrongkieng-style1-style', get_template_directory_uri() . '/style/style1.css' );                
-//        
-//        wp_enqueue_style( 'xuongrongkieng-system-style', get_template_directory_uri() . '/style/system.css' );                
-//        
-//        wp_enqueue_style( 'xuongrongkieng-template-style', get_template_directory_uri() . '/style/template.css' );                
-//        
-//        wp_enqueue_style( 'xuongrongkieng-typo-style', get_template_directory_uri() . '/style/typo.css' );                
-        //wp_enqueue_style( 'xuongrongkieng-copy-style', get_template_directory_uri() . '/style/' );
+function sinhthaitieucanh_scripts() {
+	wp_enqueue_style( 'sinhthaitieucanh-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'xuongrongkieng-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'sinhthaitieucanh-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'xuongrongkieng-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'sinhthaitieucanh-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'xuongrongkieng_scripts' );
+add_action( 'wp_enqueue_scripts', 'sinhthaitieucanh_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -174,6 +152,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+
+/**
+ *  # Start of Woocommerce
+ */
 
 // Start intergration
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
