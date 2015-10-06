@@ -702,27 +702,27 @@ a:active {
 /*--------------------------------------------------------------
 ## Top Menus
 --------------------------------------------------------------*/
-.menu-top-menu-container{
-    width: 100%;
+.top-menu .right
+{
+    float: right;
 }
 
-.menu-top-menu-container ul{
-    list-style:none;
-    text-align: left;
-    margin: 0;
-    padding: 7px 4px 5px 0
+.top-menu ul
+{
+    margin: 30px;   
+    padding: 0;
 }
 
-  .menu-top-menu-container ul li a {       
-    color: #000;
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-family: time new roman;
-    text-decoration: none;
+.top-menu ul li { display: inline; }
+.top-menu li:before {
+content: " | ";
 }
 
-.menu-top-menu-container ul li a {       
+.top-menu li:first-child:before {
+content: none;
+}
+
+.top-menu ul li a {       
     color: #000;
     font-size: 12px;
     font-weight: normal;
@@ -730,19 +730,13 @@ a:active {
     font-family: time new roman;
 }   
 
-.top-menu .right
-{
-    float: right;
+.top-menu ul li a:hover {  
+    color: #c0c0c0;
 }
-.top-menu{
-/*    position: relative;
-    height: 40px;*/
-    width: 100%;
-    //background-color: #ccc;
-    /*background: rgba(240, 240, 240, 0.95);*/
-    //background: #fff;
-    //border-bottom: 1px solid #ddd;
-    z-index: 1030;       
+
+.top-menu ul li a:focus {  
+    /*color: #c0c0c0;*/
+    text-decoration: none;
 }
 
 /*--------------------------------------------------------------
