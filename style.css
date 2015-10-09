@@ -27,9 +27,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
+# Header
+    ## Logo
+    ## Search
+    ## Navigation
+	### Links
+	### Menus    
 # Accessibility
 # Alignments
 # Clearings
@@ -42,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -361,7 +365,11 @@ html {
 body {
     //background: rgba(240, 240, 240, 0.95);;  Fallback for when there is no custom background color defined. */                        
     width: 90%;    
-    background: #FFFFCC;
+    /*max-width: 960px;*/
+    /*background: #FFFFCC;*/
+    /*background: #d67900;*/
+    background: #176533;
+    
 }
 
 blockquote:before,
@@ -494,24 +502,37 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+logo{
+    content:url("images/Logo.png");
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 #masthead
 {
     width: 90%;
+    max-width: 960px;
     margin: 0 auto;
 }
 .header-image
 {
-     width: 960px;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 960px;
+     margin: 0 auto;
     //margin-top: 80px;
 }
 
 .header-image img.wide {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
+    //max-width: 100%;
+    //max-height: 100%;
+    //height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -553,6 +574,7 @@ a:active {
         text-transform: uppercase;
         background: #313131;
         background: hsl(0,0%, 19%);
+        border-top: 10px;
 }
 
 .main-navigation ul {
@@ -575,6 +597,8 @@ a:active {
         text-decoration: none;
         line-height: 1.3em;
         color: #aaa;
+        
+        font-weight: bold;
         /*color: hsl(0, 0%, 100%);*/	
 }
 
@@ -702,7 +726,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Top Menus
 --------------------------------------------------------------*/
-.top-menu .right
+.right
 {
     float: right;
 }
@@ -737,6 +761,44 @@ content: none;
 .top-menu ul li a:focus {  
     /*color: #c0c0c0;*/
     text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## Search
+--------------------------------------------------------------*/
+input[type="search"]{
+    box-sizing: border-box;
+    width: 100%; 
+    /*margin-top: 10px;*/
+}
+
+.search-box-wrapper{
+    z-index: 2;
+    width: 100%;
+    /*display: none;*/
+}
+
+.search-box{
+    padding: 0em;    
+/*    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);*/
+}
+
+.search-box .search-field{
+    max-width: 295px;
+    max-height: 20px;
+    float: right;
+    padding: 1rem 2rem 1rem 1rem;
+/*    font-size: 20px;
+    font-size: 2rem;*/
+    background-color: #fff;
+    border: 0;
+}
+
+.error404 .search-submit, 
+.search .search-submit, 
+.search-box .search-submit{
+    display: none;
 }
 
 /*--------------------------------------------------------------
@@ -844,8 +906,12 @@ content: none;
 .content-area
 {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 80px;
+    max-width: 960px;
+    margin: 0 auto;  
+    /*margin-top: 10px;*/
+    background: #FFF;
+    /*border-radius: 10px;*/
+    padding: 0 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1008,9 +1074,4 @@ object {
     float: left;
     display: block;
     
-}
-
-.logo
-{
-    background-image: url(images/Logo.jpg);
 }

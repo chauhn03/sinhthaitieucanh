@@ -28,12 +28,18 @@
             <div>
                 <div class="left">
                     <div class="site-logo">
-                        <img class="logo" src="http://localhost:8080/wp/wp-content/themes/sinhthaitieucanh.vn/images/Logo.png"/>
+                        <a href="<?php bloginfo('url'); ?>">
+                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Logo_darker.png"); ?>"/>
+                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Slogan_lighter.png"); ?>"/>
+                        </a>                                                       
                     </div>                    
                 </div>             
-                <div class="top-menu">                               
-                    <div class="right">                   
-                         <?php wp_nav_menu( array( 'theme_location' => 'top', 'menu_id' => 'top-menu' ) ); ?>                
+                
+                <div class="right">                   
+                    <div id="search-container" class="search-box-wrapper clear">
+                        <div class="search-box clear">
+                            <?php get_search_form()?>  
+                        </div>                                
                     </div>                
                 </div>    
             </div>            
@@ -45,11 +51,12 @@
                      </div>    
                 </div>                                       
             </nav> <!--#site-navigation -->
-            
+                        
             <div id="header-image" class="header-image">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                        <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-                </a>
+                    <?php
+//                    if(is_home())
+                      echo do_shortcode('[pjc_slideshow slide_type="banner"]'); 
+                    ?>                
             </div>                
                        
             </div> 
