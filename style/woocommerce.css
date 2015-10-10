@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : chauhn
 */
 
+
 div.product div.images img, 
 #wt_content div.product div.images img,
 ul.products li.product a img {	
@@ -90,6 +91,7 @@ div.product .woocommerce_tabs ul.tabs,
 	margin-bottom: 10px; 
 }
 .woocommerce ul.products li.product .price {
+    font-weight: 800;
 	margin: 5px 20px; 
 }
 .woocommerce ul.products li.product > a, .woocommerce-page ul.products li.product > a {
@@ -120,8 +122,8 @@ div.product .woocommerce_tabs ul.tabs,
 	background: #333 !important; 
 	text-shadow: 0 0px 0 rgba(0,0,0,0);
 }
-.woocommerce-page .price {
-	color: #428bca !important;
+.woocommerce-page .price {        
+	color: #C8A256 !important;
 }
 .woocommerce ul.products li.product a h3, .woocommerce-page ul.products li.product a h3 {
 	color: #2c3e50 !important;
@@ -147,8 +149,14 @@ div.product .woocommerce_tabs ul.tabs,
 	padding-right: 10px !important; 
 }
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
-    margin-top: 4px !important;
+    /*margin-top: 4px !important;*/
+    display: none;
 }
+
+.woocommerce-ordering{
+    display: none;
+}
+
 .woocommerce .products ul, .woocommerce ul.products, .woocommerce-page .products ul, .woocommerce-page ul.products {
     border-top: 1px solid #E4E4E4;
     padding-top: 25px !important;
@@ -621,9 +629,14 @@ form .form-row .input-checkbox {
 }
 
 .woocommerce ul.products li.product .price del, .woocommerce-page ul.products li.product .price del,
-.woocommerce ul.products li.product .price {
+.woocommerce ul.products li.product .price {    
 	font-size: 15px !important;
 }
+
+.woocommerce-page ul.products li.product .price del{
+    	font-size: 11px !important;
+}
+
 .woocommerce ul.products li.product .price del, .woocommerce-page ul.products li.product .price del {
 	margin-right: 5px;
 }
