@@ -115,7 +115,9 @@ add_action( 'widgets_init', 'sinhthaitieucanh_widgets_init' );
  * Enqueue scripts and styles.
  */
 function sinhthaitieucanh_scripts() {
-	wp_enqueue_style( 'sinhthaitieucanh-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'sinhthaitieucanh-style', get_stylesheet_uri() );               
+        
+        wp_enqueue_style( 'woocommerce-style', get_template_directory_uri() . '/style/woocommerce.css' );
 
 	wp_enqueue_script( 'sinhthaitieucanh-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -195,3 +197,4 @@ add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
 /**
  *  #End of Woocommerce
  */
+
