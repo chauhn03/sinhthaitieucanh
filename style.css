@@ -808,15 +808,24 @@ input[type="search"]{
 .social-network-container{
     margin-top: 5px;
     height: auto;
-    width: 203px;
+    width: 215px;
     float: right;
     /*position: absolute;*/
     right: 0px;
     /*width: 300px;*/        
 }
+
+.social-network-container a{           
+    text-decoration:none;
+}
+
 .social-network-container span
 {
     color: #FFFFFF;
+}
+
+.social-network-content a{
+    margin-left: 5px;
 }
 
 .cart-contents{
@@ -826,10 +835,6 @@ input[type="search"]{
     padding-right: 10px;
     margin-right: 10px;
     /*height: 40px;*/
-}
-
-.cart-contents a{           
-    text-decoration:none;
 }
 
 .cart-content-count

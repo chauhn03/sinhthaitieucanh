@@ -54,14 +54,14 @@
                         
                         <div class="social-network-content">
                             <div class="social_network_facebook">
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/sinhthaitieucanh" title="Facebook">
                                     <img src="<?php esc_html_e(get_template_directory_uri() . "/images/facebook_icon.png"); ?>"/>
                                 </a>
-                                <a href="https://twitter.com/">
+                                <a href="https://twitter.com/" title="Twitter">
                                     <img src="<?php esc_html_e(get_template_directory_uri() . "/images/twitter_icon.png"); ?>"/>
                                 </a> 
                                 
-                                <a href="https://plus.google.com/">
+                                <a href="https://plus.google.com/" title="Google Plus">
                                     <img src="<?php esc_html_e(get_template_directory_uri() . "/images/google_plus_icon.png"); ?>"/>
                                 </a> 
                             </div>                                                                                                             
