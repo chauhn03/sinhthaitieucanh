@@ -375,6 +375,8 @@ form .form-row .input-checkbox {
 	border: none; }
 .woocommerce ul.products li.product a:hover img, .woocommerce-page ul.products li.product a:hover img {
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0);
+        border: 1px;
+        background: yellow;
 	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0); }
 .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #content input.button {
 	color: #333;
@@ -399,7 +401,7 @@ form .form-row .input-checkbox {
 	float: right;
 	margin-top: 3px!important;  
 }
-.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover,, .woocommerce-page #content input.button:hover {
+.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #content input.button:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page #content input.button:hover {
 	color: #eee; }
 .woocommerce .products .star-rating, .woocommerce-page .products .star-rating {
 	margin: 0 auto .5em; }
@@ -428,7 +430,13 @@ form .form-row .input-checkbox {
 	color: #428bca;
 }
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-	width: 22.15%; }
+	width: 22.15%;              
+}
+
+.woocommerce ul.products li.product:hover{   
+    box-shadow: 0 20px 30px #DDDDDD;
+}
+
 .woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale {
 	margin: 6px 6px 0 0;
 	z-index: 10;
@@ -807,3 +815,11 @@ form .form-row .input-checkbox {
 	}
 }
 
+.woocommerce ul.products li.product .button{
+    height: 30px;
+    margin: 0.5em;
+}
+
+.added_to_cart wc-forward{
+    display: none;
+}

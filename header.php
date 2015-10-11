@@ -83,11 +83,13 @@
 //                    if(is_home())
                       echo do_shortcode('[pjc_slideshow slide_type="banner"]'); 
                     ?>                
-            </div>                
-                       
-            </div> 
-	</header> <!--#masthead -->
+                    <img class="" src="<?php esc_html_e(get_template_directory_uri() . "/images/line.png"); ?>" alt="line">
+                    
+                    
+            </div>               
+        </div> 
+    </header> <!--#masthead -->
         
-	<div id="content" class="site-content">         
+<div id="content" class="site-content">         
 
     

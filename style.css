@@ -512,6 +512,13 @@ textarea {
     padding-top: 10px;    
 }
 
+.line{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: yellow;
+/*    padding-top: 10px;    */
+}
 /*--------------------------------------------------------------
 # Logo
 --------------------------------------------------------------*/
@@ -526,7 +533,8 @@ logo{
 {
     width: 90%;
     max-width: 960px;
-     margin: 0 auto;     
+     margin: 0 auto;    
+     background-color: white;
     //margin-top: 80px;
 }
 
@@ -955,12 +963,14 @@ input[type="search"]{
 {
     width: 90%;
     max-width: 960px;
-    margin: 0 auto;
+    //border-top: 1px double #E4E4E4;
+    margin: -6px  auto;
     /*margin-top: 10px;*/
     background: #FFF;
     /*border-radius: 10px;*/
-    padding: 0 10px;
+    padding: 10px 10px;   
 }
+
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -986,7 +996,7 @@ input[type="search"]{
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	//margin: 1.5em 0 0;
 }
 
 .page-links {
