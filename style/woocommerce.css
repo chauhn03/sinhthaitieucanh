@@ -165,6 +165,8 @@ div.product .woocommerce_tabs ul.tabs,
 
 .woocommerce .products ul, .woocommerce ul.products, .woocommerce-page .products ul, .woocommerce-page ul.products {
     border-top: 1px solid #E4E4E4;
+    /*    border: 0 dashed #666;    
+    border-top-width: 1px;*/
     padding-top: 25px !important;
 }
 .woocommerce-account .page-content h2 {

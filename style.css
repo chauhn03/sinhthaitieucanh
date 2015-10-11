@@ -975,6 +975,7 @@ input[type="search"]{
     padding: 10px 10px;   
     border: 0 dashed #666;    
     border-top-width: 1px;
+    //border-top: 1px solid #E4E4E4;
 }
 
 
