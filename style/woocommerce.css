@@ -84,6 +84,11 @@ div.product .woocommerce_tabs ul.tabs,
 .woocommerce ul.products li.product .star-rating {
 	margin: 0 20px;
 }
+
+.woocommerce ul.products li.product h3{
+        padding: 0; 
+}
+
 .woocommerce ul.products li.product .star-rating {
 	margin-left: 10px;
 }
@@ -92,7 +97,8 @@ div.product .woocommerce_tabs ul.tabs,
 }
 .woocommerce ul.products li.product .price {
     font-weight: 600;
-	margin: 5px 20px; 
+	//margin: 5px 20px; 
+        margin: 0 0 0 20px; 
 }
 .woocommerce ul.products li.product > a, .woocommerce-page ul.products li.product > a {
 	border-bottom: 1px solid #e6e6e6;
