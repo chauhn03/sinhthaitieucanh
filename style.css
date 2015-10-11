@@ -504,6 +504,13 @@ textarea {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+#masthead
+{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 10px;    
+}
 
 /*--------------------------------------------------------------
 # Logo
@@ -515,12 +522,6 @@ logo{
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-#masthead
-{
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
-}
 .header-image
 {
     width: 90%;
@@ -802,6 +803,47 @@ input[type="search"]{
 }
 
 /*--------------------------------------------------------------
+## Social Network
+--------------------------------------------------------------*/
+.social-network-container{
+    margin-top: 5px;
+    height: auto;
+    width: 203px;
+    float: right;
+    /*position: absolute;*/
+    right: 0px;
+    /*width: 300px;*/        
+}
+.social-network-container span
+{
+    color: #FFFFFF;
+}
+
+.cart-contents{
+/*    width: auto;*/
+    float: left;
+    border-right: 1px solid #777;
+    padding-right: 10px;
+    margin-right: 10px;
+    /*height: 40px;*/
+}
+
+.cart-contents a{           
+    text-decoration:none;
+}
+
+.cart-content-count
+{
+   vertical-align: top;
+    font-size: 17px; 
+    margin-top: -10px;
+    margin-left: -8px;
+}
+
+.social-network-content{    
+    padding-top: 3px;
+}
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -872,7 +914,7 @@ input[type="search"]{
 .site-footer:after {
 	content: "";
 	display: table;
-        margin: 0px;
+        margin: 0;       
 }
 
 .clear:after,

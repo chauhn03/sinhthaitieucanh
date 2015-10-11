@@ -150,11 +150,11 @@ div.product .woocommerce_tabs ul.tabs,
 }
 .woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count {
     /*margin-top: 4px !important;*/
-    display: none;
+    /*display: none;*/
 }
 
 .woocommerce-ordering{
-    display: none;
+    /*display: none;*/
 }
 
 .woocommerce .products ul, .woocommerce ul.products, .woocommerce-page .products ul, .woocommerce-page ul.products {
@@ -793,3 +793,4 @@ form .form-row .input-checkbox {
 		margin-right: 0; 
 	}
 }
+

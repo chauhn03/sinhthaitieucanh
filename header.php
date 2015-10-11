@@ -14,6 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -40,7 +41,32 @@
                         <div class="search-box clear">
                             <?php get_search_form()?>  
                         </div>                                
-                    </div>                
+                    </div>      
+                    <div class="social-network-container">
+                        <div class="cart-contents">
+                            <a href="<?php echo WC()->cart->get_cart_url(); ?>" 
+                               title="<?php _e( 'View your shopping cart' ); ?>">                                
+                                <img src="<?php esc_html_e(get_template_directory_uri() . "/images/cart-shopping.png"); ?>"/>
+                                <span class="cart-content-count">[<?php echo sprintf (_n( '%d', '%d', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?>]</span>   
+                                   <?php //echo WC()->cart->get_cart_total(); ?>
+                            </a>
+                        </div>
+                        
+                        <div class="social-network-content">
+                            <div class="social_network_facebook">
+                                <a href="https://www.facebook.com/">
+                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/facebook_icon.png"); ?>"/>
+                                </a>
+                                <a href="https://twitter.com/">
+                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/twitter_icon.png"); ?>"/>
+                                </a> 
+                                
+                                <a href="https://plus.google.com/">
+                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/google_plus_icon.png"); ?>"/>
+                                </a> 
+                            </div>                                                                                                             
+                        </div>                        
+                    </div>                    
                 </div>    
             </div>            
             
