@@ -516,8 +516,12 @@ textarea {
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
-    background-color: yellow;
+    /*background-color: #666;*/
 /*    padding-top: 10px;    */
+}
+
+.navigation-path{    
+    padding: 0 0 10px 10px; 
 }
 /*--------------------------------------------------------------
 # Logo
@@ -969,6 +973,8 @@ input[type="search"]{
     background: #FFF;
     /*border-radius: 10px;*/
     padding: 10px 10px;   
+    border: 0 dashed #666;    
+    border-top-width: 1px;
 }
 
 

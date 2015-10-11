@@ -85,7 +85,14 @@
                     ?>                
                     <img class="" src="<?php esc_html_e(get_template_directory_uri() . "/images/line.png"); ?>" alt="line">
                     
-                    
+                    <div class="navigation-path">
+                        <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+                        <?php if(function_exists('bcn_display'))
+                        {
+                            bcn_display();
+                        }?>
+                    </div>
+                    </div>                    
             </div>               
         </div> 
     </header> <!--#masthead -->
