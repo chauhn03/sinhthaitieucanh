@@ -364,7 +364,9 @@ html {
 
 body {
     //background: rgba(240, 240, 240, 0.95);;  Fallback for when there is no custom background color defined. */                        
-    width: 90%;    
+    width: 90%;
+    max-width: 960px;
+    margin: -6px  auto;  
     /*max-width: 960px;*/
     /*background: #FFFFCC;*/
     /*background: #d67900;*/
@@ -505,17 +507,12 @@ textarea {
 # Header
 --------------------------------------------------------------*/
 #masthead
-{
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
+{  
     padding-top: 10px;    
 }
 
 .line{
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto;
+  
     /*background-color: #666;*/
 /*    padding-top: 10px;    */
 }
@@ -534,10 +531,7 @@ logo{
 # Navigation
 --------------------------------------------------------------*/
 .header-image
-{
-    width: 90%;
-    max-width: 960px;
-     margin: 0 auto;    
+{    
      background-color: white;
     //margin-top: 80px;
 }
@@ -584,9 +578,9 @@ a:active {
         display: block;
         clear: both;
         font-family: 'Lato', sans-serif;
-        text-transform: uppercase;
-        background: #313131;
-        background: hsl(0,0%, 19%);
+        /*text-transform: uppercase;*/
+        background: #77BD07;
+        /*background: hsl(0,0%, 19%);*/
         border-top: 10px;
 }
 
@@ -600,6 +594,14 @@ a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+        border-right: 1px white;
+}
+
+.main-navigation li {
+    /*border-right: 1px dashed #a5d559;*/
+}
+.main-navigation li:last-child {
+    border: 0;
 }
 
 .main-navigation a {
@@ -609,8 +611,8 @@ a:active {
         font-size: 0.8rem;
         text-decoration: none;
         line-height: 1.3em;
-        color: #aaa;
-        
+        /*color: #aaa;*/
+        color: white;
         font-weight: bold;
         /*color: hsl(0, 0%, 100%);*/	
 }
@@ -631,8 +633,9 @@ a:active {
         /*display: none;*/
         float: left;
         padding: 0;
-        background: #4d4d4d;
-        background: hsl(0, 0%, 30%);
+/*        background: #4d4d4d;
+        background: hsl(0, 0%, 30%);*/
+        background: #a5d559;
 }
 
 .main-navigation ul ul ul {
@@ -642,18 +645,25 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 240px;
 }
 
 .main-navigation ul ul li {
+    border-bottom: 1px dashed white;
 }
+
+.main-navigation ul ul li:last-child
+{ 
+    border-bottom: none; 
+} 
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-    color: #fff;
+/*    color: #fff;
     color: hsl(0,0%, 100%);
     background: #4d4d4d;
-    background: hsl(0, 0, 30%);
+    background: hsl(0, 0, 30%);*/
+    color: #2a7600;
 }
 
 .main-navigation ul ul :hover > a,
@@ -662,8 +672,8 @@ a:active {
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a.focus {
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+/*    background: #313131;
+    background: hsl(0, 0%, 19%);*/
 }
 
 .main-navigation ul li:hover > ul,
@@ -680,22 +690,25 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover
 .main-navigation .current-menu-item > a:hover {
-    background: white;
-    color: #313131;
-    color: hsl(0, 0%, 30%);
+    /*background: white;*/
+/*    color: #313131;
+    color: hsl(0, 0%, 30%);*/
+    color: #2a7600;
 }
 
 .main-navigation .current_page_ancestor{
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+/*    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);*/
+    background: #a5d559;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a{
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+/*    color: #fff;
+    color: hsl(0, 0%, 100%);*/
+    color: #2a7600;
+    /*background: #313131;*/
+    /*background: hsl(0, 0%, 19%);*/
 }
 
 
@@ -820,7 +833,7 @@ input[type="search"]{
 .social-network-container{
     margin-top: 5px;
     height: auto;
-    width: 215px;
+    width: 260px;
     float: right;
     /*position: absolute;*/
     right: 0px;
@@ -965,10 +978,10 @@ input[type="search"]{
 --------------------------------------------------------------*/
 .content-area
 {
-    width: 90%;
-    max-width: 960px;
+/*    width: 90%;
+    max-width: 960px;*/
     //border-top: 1px double #E4E4E4;
-    margin: -6px  auto;
+    /*margin: -6px  auto;*/
     /*margin-top: 10px;*/
     background: #FFF;
     /*border-radius: 10px;*/
@@ -1139,4 +1152,71 @@ object {
     float: left;
     display: block;
     
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer{
+    background: #77BD07;
+    height: 165px;
+    padding: 5px;
+    /*width: 100%;*/
+}
+
+.companyInfo{    
+    width: 250px;    
+    padding-left: 5px;  
+    
+}
+
+.companyInfo h4{
+    color: white;
+    height: 10px;
+    margin-top: 10px;
+}
+
+
+.companyInfoDetail{
+    border-top: 1px solid #E4E4E4;
+}
+
+.companyInfoDetail span{
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+.facebookLikeBox{
+    float: right;
+    width: 250px;
+}
+
+.site-footer{  
+    /*margin-top: 6px;*/
+    padding: 10px;
+    height: 50px;    
+    width: 100%;
+    /*background: #666;*/    
+    background: #404040;
+    border-top: 1px solid #ddd;
+}
+
+.footer-maps{
+    position: relative;
+    display: inline-block;
+    
+    /*float: left;*/
+}
+
+.site-footer span{
+    color: #21759b;     
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.site-footer a{
+    color: #ccc;     
+    font-size: 12px;
+    font-weight: bold;
 }

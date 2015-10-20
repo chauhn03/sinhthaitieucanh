@@ -21,7 +21,16 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>                
+<body <?php body_class(); ?>>  
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=440158272732840";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
 <div id="page" class="hfeed site">        
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sinhthaitieucanh' ); ?></a>
 
@@ -30,7 +39,7 @@
                 <div class="left">
                     <div class="site-logo">
                         <a href="<?php bloginfo('url'); ?>">
-                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Logo_darker.png"); ?>"/>
+                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/GreenwayGarden.png"); ?>"/>
                             <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Slogan_lighter.png"); ?>"/>
                         </a>                                                       
                     </div>                    
@@ -57,13 +66,18 @@
                                 <a href="https://www.facebook.com/sinhthaitieucanh" title="Facebook">
                                     <img src="<?php esc_html_e(get_template_directory_uri() . "/images/facebook_icon.png"); ?>"/>
                                 </a>
-                                <a href="https://twitter.com/" title="Twitter">
-                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/twitter_icon.png"); ?>"/>
-                                </a> 
                                 
                                 <a href="https://plus.google.com/" title="Google Plus">
                                     <img src="<?php esc_html_e(get_template_directory_uri() . "/images/google_plus_icon.png"); ?>"/>
                                 </a> 
+                                
+                                <a href="https://www.pinterest.com/" title="Pinterest">
+                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/pinterest_icon.png"); ?>"/>
+                                </a> 
+                                
+                                 <a href="https://instagram.com/" title="Instagram">
+                                    <img src="<?php esc_html_e(get_template_directory_uri() . "/images/instagram_icon.png"); ?>"/>
+                                </a>                                                                 
                             </div>                                                                                                             
                         </div>                        
                     </div>                    
