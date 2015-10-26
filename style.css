@@ -365,13 +365,12 @@ html {
 body {
     //background: rgba(240, 240, 240, 0.95);;  Fallback for when there is no custom background color defined. */                        
     width: 90%;
-    max-width: 960px;
+    /*max-width: 960px;960px*/
     margin: -6px  auto;  
     /*max-width: 960px;*/
     /*background: #FFFFCC;*/
     /*background: #d67900;*/
-    background: #176533;
-    
+    background: #176533;    
 }
 
 blockquote:before,
@@ -509,6 +508,8 @@ textarea {
 #masthead
 {  
     padding-top: 10px;    
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .line{
@@ -519,6 +520,11 @@ textarea {
 
 .navigation-path{    
     padding: 0 0 10px 10px; 
+}
+
+.navigation-path a{
+    font-style: italic;   
+    font-size: 15px;
 }
 /*--------------------------------------------------------------
 # Logo
@@ -533,6 +539,8 @@ logo{
 .header-image
 {    
      background-color: white;
+     max-width: 960px;
+     margin: 0 auto;
     //margin-top: 80px;
 }
 
@@ -541,7 +549,6 @@ logo{
     //max-height: 100%;
     //height: auto;
 }
-
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -983,7 +990,7 @@ input[type="search"]{
     //border-top: 1px double #E4E4E4;
     /*margin: -6px  auto;*/
     /*margin-top: 10px;*/
-    background: #FFF;
+    background: #EEE;
     /*border-radius: 10px;*/
     padding: 10px 10px;   
     border: 0 dashed #666;    
@@ -991,7 +998,10 @@ input[type="search"]{
     //border-top: 1px solid #E4E4E4;
 }
 
-
+.site-content{
+    max-width: 960px;
+    margin: 0 auto;
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1150,7 +1160,12 @@ object {
 
 .site-logo{
     float: left;
-    display: block;
+    display: inline-block;         
+    max-width: 410px;
+}
+
+.site-logo{
+    width: 100%;
     
 }
 
@@ -1197,6 +1212,8 @@ object {
     padding: 10px;
     height: 50px;    
     width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     /*background: #666;*/    
     background: #404040;
     border-top: 1px solid #ddd;

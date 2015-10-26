@@ -17,7 +17,9 @@ if ( ! $post->post_excerpt ) {
 	return;
 }
 
+global $product;
 ?>
-<div itemprop="description">
-	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+<div itemprop="description">    
+	<?php  echo apply_filters( 'woocommerce_short_description', $post->post_content ) ?>    
 </div>
+<?php $product->list_attributes(); ?>

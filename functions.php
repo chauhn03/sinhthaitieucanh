@@ -232,3 +232,31 @@ global $product;
 $link = $product->get_permalink();
 echo do_shortcode('<a href="'.$link.'" class="button addtocartbutton">Xem chi tiết</a>');
 }
+
+/**
+ * Remove Product Page Tabs
+*/
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+
+}
+
+/**
+ * Add social network sharing to product   
+*/
+add_action( 'woocommerce_share', 'patricks_woocommerce_social_share_icons', 10 );
+function patricks_woocommerce_social_share_icons() {
+    if ( function_exists( 'sharing_display' ) ) {
+        remove_filter( 'the_content', 'sharing_display', 19 );
+        remove_filter( 'the_excerpt', 'sharing_display', 19 );        
+        echo sharing_display();
+        remove_filter( 'the_excerpt', 'sharing_display', 20 );        
+    }
+}

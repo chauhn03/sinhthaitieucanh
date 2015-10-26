@@ -39,8 +39,11 @@
                 <div class="left">
                     <div class="site-logo">
                         <a href="<?php bloginfo('url'); ?>">
-                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/GreenwayGarden.png"); ?>"/>
-                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Slogan_lighter.png"); ?>"/>
+                            <img src="<?php esc_html_e(get_template_directory_uri() . "/images/GreenwayGarden+-Slogant.png"); ?>"/>
+                            
+<!--                            <div class="">
+                                <img src="<?php esc_html_e(get_template_directory_uri() . "/images/Slogan_lighter.png"); ?>"/>
+                            </div>                            -->
                         </a>                                                       
                     </div>                    
                 </div>             
