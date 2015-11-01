@@ -1320,6 +1320,7 @@ object {
 @media screen and (max-width: 768px) {
     .footer{
         padding: 0px;
+        width: 100%;
     }
     
     .footer-maps{
@@ -1332,5 +1333,6 @@ object {
     .facebookLikeBox{
     float: none;
     width: 100%;
+    margin: 0px auto;
     }
 }
