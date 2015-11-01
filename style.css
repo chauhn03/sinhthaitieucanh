@@ -1250,8 +1250,8 @@ object {
     background: #77BD07;
     height: 165px;
     padding: 5px;
-    display: inline-block;    
-    /*width: 100%;*/
+    display: inline-block;        
+    width: 100%;
 }
 
 .companyInfo{    
@@ -1320,19 +1320,24 @@ object {
 @media screen and (max-width: 768px) {
     .footer{
         padding: 0px;
-        width: 100%;
+        width: 100%;     
+        display: block;
+    }
+    
+    .companyInfoDetail{
+    margin-bottom: 30px;
     }
     
     .footer-maps{
         width: 100%;
+        float: right;        
     }
     .iframe-maps{
         width: 100%;
     }    
     
     .facebookLikeBox{
-    float: none;
     width: 100%;
-    margin: 0px auto;
+    overflow:auto;
     }
 }

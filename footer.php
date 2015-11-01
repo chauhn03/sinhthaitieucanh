@@ -22,21 +22,7 @@
                 </div>                    
             </div>                        
             
-            <div class="footer-maps aligncenter">
-                <iframe frameborder="0" scrolling="no" class="iframe-maps"                                              
-                        src="https://maps.google.com/maps?hl=en&q=88 Đường Số 6, phường Phước Bình, Thành phố Hồ Chí Minh, Quận 9, Ho Chi Minh, Vietnam&ie=UTF8&t=satellite&z=18&iwloc=B&output=embed">
-                    <div>
-                        <small>
-                            <a href="http://embedgooglemaps.com">embedgooglemaps.com</a>
-                        </small>
-                    </div>
-                    <div>
-                        <small>
-                            <a href="http://www.premiumlinkgenerator.com/">multihoster premium</a>
-                        </small>
-                    </div>
-                    </iframe>
-            </div>
+           
             
             <div class="facebookLikeBox">
               <div class="fb-page" 
@@ -50,6 +36,22 @@
                       </blockquote>
                   </div>
               </div>
+            </div>
+            
+             <div class="footer-maps aligncenter">
+                <iframe frameborder="0" scrolling="no" class="iframe-maps"                                              
+                        src="https://maps.google.com/maps?hl=en&q=88 Đường Số 6, phường Phước Bình, Thành phố Hồ Chí Minh, Quận 9, Ho Chi Minh, Vietnam&ie=UTF8&t=satellite&z=18&iwloc=B&output=embed">
+                    <div>
+                        <small>
+                            <a href="http://embedgooglemaps.com">embedgooglemaps.com</a>
+                        </small>
+                    </div>
+                    <div>
+                        <small>
+                            <a href="http://www.premiumlinkgenerator.com/">multihoster premium</a>
+                        </small>
+                    </div>
+                    </iframe>
             </div>
         </div>
 	</div><!-- #content -->
