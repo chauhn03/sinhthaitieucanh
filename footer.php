@@ -22,9 +22,7 @@
                 </div>                    
             </div>                        
             
-           
-            
-            <div class="facebookLikeBox">
+             <div class="facebookLikeBox">
               <div class="fb-page" 
                    data-href="https://www.facebook.com/sinhthaitieucanh" 
                    data-small-header="true" data-adapt-container-width="true" 
@@ -38,7 +36,7 @@
               </div>
             </div>
             
-             <div class="footer-maps aligncenter">
+            <div class="footer-maps aligncenter">
                 <iframe frameborder="0" scrolling="no" class="iframe-maps"                                              
                         src="https://maps.google.com/maps?hl=en&q=88 Đường Số 6, phường Phước Bình, Thành phố Hồ Chí Minh, Quận 9, Ho Chi Minh, Vietnam&ie=UTF8&t=satellite&z=18&iwloc=B&output=embed">
                     <div>
@@ -52,7 +50,7 @@
                         </small>
                     </div>
                     </iframe>
-            </div>
+            </div>                       
         </div>
 	</div><!-- #content -->
         

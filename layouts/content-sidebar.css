@@ -29,10 +29,12 @@
 
 .content-area-with-widget
 {
-    float: left;    
-    width: 640px;
+    float: left; 
+    /*width: 100%;*/
+    max-width: 640px;
+    right: 330px;
     background: #FFF;
-    padding: 10px;
+    padding: 10px;    
 }
 .site-footer {
 	clear: both;
@@ -54,13 +56,22 @@
     margin: 0 auto;    
 }
 
-@media screen and (min-width: 780px){    
+@media screen and (max-width: 976px){   
+    .content-area-with-widget{
+     width: 100%;
+     /*background: yellow;*/
+     float: none;
+     margin: auto 0px;
+     max-width: 959px;
+    }    
+    
     .content-area {
     /*	float: left;
             margin: 0 -25% 0 0;
             width: 100%;        */
             position: relative;
-            width: auto;
+            width: 100%;
+            /*width: auto;*/
             /*margin: 0 -40% 0 0;*/
 /*            width: 100%;
             max-width: 960px;*/
@@ -85,12 +96,12 @@
     }
 }
 
-@media screen and (max-width: 779px)
+@media screen and (max-width: 976px)
 {
     .site-content .widget-area {
         width: auto;
         float: none;
-        max-width: 780px;
+        max-width: 959px;
         margin: 1em auto 0;
     }
 }
