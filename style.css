@@ -577,7 +577,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-## Menus
+### Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	position: relative;
@@ -726,7 +726,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 768px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -797,6 +797,13 @@ content: none;
     text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+	.right {
+		float: none;
+                margin: 0 auto;
+	}	
+}
+
 /*--------------------------------------------------------------
 ## Search
 --------------------------------------------------------------*/
@@ -836,6 +843,12 @@ input[type="search"]{
     display: none;
 }
 
+
+@media screen and (max-width: 768px) {
+	.search-box {
+		display: none;
+	}	
+}
 /*--------------------------------------------------------------
 ## Social Network
 --------------------------------------------------------------*/
@@ -881,6 +894,17 @@ input[type="search"]{
 
 .social-network-content{    
     padding-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+	.social-network-container {
+		margin: 0 auto;                               
+                height: auto;
+                /*width: 100%;*/
+                float: none;
+                /*position: absolute;*/
+                right: auto ;
+	}	
 }
 /*--------------------------------------------------------------
 # Accessibility
@@ -1204,13 +1228,19 @@ object {
 
 .site-logo{
     float: left;
-    display: inline-block;         
+    /*display: inline-block;*/         
     max-width: 410px;
 }
 
 .site-logo{
-    width: 100%;
-    
+    /*width: 100%;*/    
+}
+
+@media screen and (max-width: 768px) {
+    .site-logo{
+        float: none;
+        margin: 0px auto;
+    }    
 }
 
 /*--------------------------------------------------------------
