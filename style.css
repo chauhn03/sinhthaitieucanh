@@ -1282,8 +1282,8 @@ object {
 }
 
 .facebookLikeBox{
-    float: right;
-    width: 250px;
+    float: left;
+    width: 252px;    
 }
 
 .site-footer{  
@@ -1301,7 +1301,7 @@ object {
 .footer-maps{
     position: relative;
     display: inline-block;    
-    
+    /*float: right;*/
     /*float: left;*/
 }
 
@@ -1317,13 +1317,16 @@ object {
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 976px) {
     .footer{
         padding: 0px;
+        width: 100%; 
+        display: block;
     }
     
     .footer-maps{
         width: 100%;
+        float: right;
     }
     .iframe-maps{
         width: 100%;
@@ -1331,6 +1334,12 @@ object {
     
     .facebookLikeBox{
     float: none;
-    width: 100%;
+    /*width: 100%;*/
+    overflow: auto;
+    padding: 0px auto;    
+    background: #77BD07;
+    display: block;
     }
 }
+
+@media screen and (max-width: 959px) {

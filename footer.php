@@ -22,6 +22,20 @@
                 </div>                    
             </div>                        
             
+             <div class="facebookLikeBox">
+              <div class="fb-page" 
+                   data-href="https://www.facebook.com/sinhthaitieucanh" 
+                   data-small-header="true" data-adapt-container-width="true" 
+                   data-hide-cover="false" data-show-facepile="true" 
+                   data-show-posts="false">
+                  <div class="fb-xfbml-parse-ignore">
+                      <blockquote cite="https://www.facebook.com/sinhthaitieucanh">
+                          <a href="https://www.facebook.com/sinhthaitieucanh">Sinh thái tiểu cảnh</a>
+                      </blockquote>
+                  </div>
+              </div>
+            </div>
+            
             <div class="footer-maps aligncenter">
                 <iframe frameborder="0" scrolling="no" class="iframe-maps"                                              
                         src="https://maps.google.com/maps?hl=en&q=88 Đường Số 6, phường Phước Bình, Thành phố Hồ Chí Minh, Quận 9, Ho Chi Minh, Vietnam&ie=UTF8&t=satellite&z=18&iwloc=B&output=embed">
@@ -36,21 +50,7 @@
                         </small>
                     </div>
                     </iframe>
-            </div>
-            
-            <div class="facebookLikeBox">
-              <div class="fb-page" 
-                   data-href="https://www.facebook.com/sinhthaitieucanh" 
-                   data-small-header="true" data-adapt-container-width="true" 
-                   data-hide-cover="false" data-show-facepile="true" 
-                   data-show-posts="false">
-                  <div class="fb-xfbml-parse-ignore">
-                      <blockquote cite="https://www.facebook.com/sinhthaitieucanh">
-                          <a href="https://www.facebook.com/sinhthaitieucanh">Sinh thái tiểu cảnh</a>
-                      </blockquote>
-                  </div>
-              </div>
-            </div>
+            </div>                       
         </div>
 	</div><!-- #content -->
         

@@ -14,8 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-            <h1>Page</h1>
+	<div id="primary" class="content-area">            
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
