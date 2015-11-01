@@ -25,12 +25,12 @@ function sinhthaitieucanh_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'sinhthaitieucanh' ),
+		esc_html_x( 'Đăng ngày %s', 'post date', 'sinhthaitieucanh' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'sinhthaitieucanh' ),
+		esc_html_x( 'bởi %s', 'post author', 'sinhthaitieucanh' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -55,7 +55,7 @@ function sinhthaitieucanh_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'sinhthaitieucanh' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'sinhthaitieucanh' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' . esc_html__( 'Thẻ: %1$s', 'sinhthaitieucanh' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 

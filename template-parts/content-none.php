@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'sinhthaitieucanh' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Không tìm thấy kết quả', 'sinhthaitieucanh' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -21,7 +21,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'sinhthaitieucanh' ); ?></p>
+			<p><?php esc_html_e( 'Không tìm thấy kết quả phù hợp với từ khóa tìm kiếm của bạn. Vui lòng thử lại với từ khóa khác.', 'sinhthaitieucanh' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>

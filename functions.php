@@ -117,6 +117,8 @@ add_action( 'widgets_init', 'sinhthaitieucanh_widgets_init' );
 function sinhthaitieucanh_scripts() {
 	wp_enqueue_style( 'sinhthaitieucanh-style', get_stylesheet_uri() );               
         
+        wp_enqueue_style( 'firstunderscores-content-sidebar', get_template_directory_uri() . '/layouts/content-sidebar.css' );
+        
         wp_enqueue_style( 'woocommerce-style', get_template_directory_uri() . '/style/woocommerce.css' );
 
 	wp_enqueue_script( 'sinhthaitieucanh-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
@@ -259,4 +261,17 @@ function patricks_woocommerce_social_share_icons() {
         echo sharing_display();
         remove_filter( 'the_excerpt', 'sharing_display', 20 );        
     }
+}
+
+
+function get_excerpt(){
+$excerpt = get_the_content();
+$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+$excerpt = strip_shortcodes($excerpt);
+$excerpt = strip_tags($excerpt);
+$excerpt = substr($excerpt, 0, 300);
+$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+//$excerpt = $excerpt.'... <a href="'.$permalink.'">xem thêm</a>';
+return $excerpt;
 }
