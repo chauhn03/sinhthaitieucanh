@@ -32,6 +32,7 @@
     float: left;    
     width: 640px;
     background: #FFF;
+    padding: 10px;
 }
 .site-footer {
 	clear: both;

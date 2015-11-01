@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <h1>Content-search</h1>
     <div class="post-feature-image-contaner">
         <?php if ( has_post_thumbnail() ): ?> 
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">

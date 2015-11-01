@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-with-widget">            
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -23,8 +23,8 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
+                        <div class="post-container">
+                            	<?php
 
 					/*
 					 * Include the Post-Format-specific template for the content.
@@ -33,6 +33,7 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 				?>
+                        </div>			
 
 			<?php endwhile; ?>
 

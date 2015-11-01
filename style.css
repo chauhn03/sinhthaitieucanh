@@ -996,6 +996,9 @@ input[type="search"]{
 	display: none;
 }
 
+.tagcloud a{
+    font-size: 10pt;
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1008,7 +1011,7 @@ input[type="search"]{
 }
 
 .post-container{
-    margin: 10px;
+/*    margin: 10px;*/
     border-bottom: 1px dashed rgba(216,216,216,1);
 }
 
@@ -1217,7 +1220,7 @@ object {
     background: #77BD07;
     height: 165px;
     padding: 5px;
-    display: inline-block;
+    display: inline-block;    
     /*width: 100%;*/
 }
 
