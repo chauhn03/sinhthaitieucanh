@@ -918,6 +918,15 @@ width: auto !important;
     margin-bottom: 5px;
 }
 
+.woocommerce table.shop_table .product-thumbnail{
+    width: 90px;
+    height: 90px;
+}
+
+.woocommerce .cart-collaterals .cart_totals{
+    padding-left: 10px;
+}
+
 /****/
 .woocommerce-page .cart-collaterals{
     padding: 0px;
@@ -994,4 +1003,5 @@ width: auto !important;
     background: #AD9AA9 none repeat scroll 0% 0% !important;
     text-shadow: 0px 0px 0px transparent;    
 }
+
 
