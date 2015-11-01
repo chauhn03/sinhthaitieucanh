@@ -23,9 +23,7 @@
             </div>                        
             
             <div class="footer-maps aligncenter">
-                <iframe frameborder="0" scrolling="no" 
-                        marginheight="0" marginwidth="0"
-                        width="426" height="154" 
+                <iframe frameborder="0" scrolling="no" class="iframe-maps"                                              
                         src="https://maps.google.com/maps?hl=en&q=88 Đường Số 6, phường Phước Bình, Thành phố Hồ Chí Minh, Quận 9, Ho Chi Minh, Vietnam&ie=UTF8&t=satellite&z=18&iwloc=B&output=embed">
                     <div>
                         <small>

@@ -1266,6 +1266,10 @@ object {
     margin-top: 10px;
 }
 
+.iframe-maps{
+    width: 426px;
+    height: 154px;
+}
 
 .companyInfoDetail{
     border-top: 1px solid #E4E4E4;
@@ -1296,7 +1300,7 @@ object {
 
 .footer-maps{
     position: relative;
-    display: inline-block;
+    display: inline-block;    
     
     /*float: left;*/
 }
@@ -1311,4 +1315,22 @@ object {
     color: #ccc;     
     font-size: 12px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        padding: 0px;
+    }
+    
+    .footer-maps{
+        width: 100%;
+    }
+    .iframe-maps{
+        width: 100%;
+    }    
+    
+    .facebookLikeBox{
+    float: none;
+    width: 100%;
+    }
 }
