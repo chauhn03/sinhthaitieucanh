@@ -1342,4 +1342,13 @@ object {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 540px) {
+    .facebookLikeBox{
+    float: none;
+    width: 100%;
+    overflow: auto;
+    padding: 0px auto;    
+    background: #77BD07;
+    display: block;
+    }
+}
